@@ -4,7 +4,7 @@ package edu.kis.vh.nursery.list;
  *  Klasa która jest przechowywana jako element klasy IntLinkedList
  */
 
-public class Node {
+public final class Node {
 
 	/**
 	 * value - zmienna która przechowuje wartość węzła

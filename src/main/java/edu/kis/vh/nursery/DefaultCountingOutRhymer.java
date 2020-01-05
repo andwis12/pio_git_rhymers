@@ -2,10 +2,11 @@ package edu.kis.vh.nursery;
 
 public class DefaultCountingOutRhymer {
 
+	private static final int SIZE = 12;
 	private static final int INT = -1;
 	private int total = INT;
 
-	private int[] NUMBERS = new int[12];
+	private int[] NUMBERS = new int[SIZE];
 
 	public void countIn(int in) {
 		if (!isFull())
