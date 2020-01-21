@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery;
 
-public interface RhymerInterface
+public interface StackInterface
 {
 	void push(int i);
 
@@ -13,7 +13,4 @@ public interface RhymerInterface
 	int top();
 
 	int getTotal();
-
-
-
 }

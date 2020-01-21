@@ -3,16 +3,17 @@ package edu.kis.vh.nursery;
 public class DefaultCountingOutRhymer {
 	private IntArrayStack arrayStack;
 
+
 	public DefaultCountingOutRhymer() {
 		arrayStack = new IntArrayStack();
 	}
 
 	public void countIn(int in) {
-		arrayStack.countIn(in);
+		arrayStack.push(in);
 	}
 
 	public boolean callCheck() {
-		return arrayStack.callCheck();
+		return arrayStack.isEmpty();
 	}
 
 	public boolean isFull() {
@@ -20,11 +21,11 @@ public class DefaultCountingOutRhymer {
 	}
 
 	public int peekaboo() {
-		return arrayStack.peekaboo();
+		return arrayStack.top();
 	}
 
 	public int countOut() {
-		return arrayStack.countOut();
+		return arrayStack.pop();
 	}
 
 	public int getTotal() {
